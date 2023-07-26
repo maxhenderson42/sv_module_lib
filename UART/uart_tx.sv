@@ -20,7 +20,7 @@ UART_transmit_state_t transmitCurrentState, transmitNextState, transmitReturnSta
 
 logic loadReturnState, TxBuffer, TxStart;
 
-logic [0:1023] [7:0] TxFifoData;
+logic [7:0] TxFifoData [0:1023];
 logic [9:0] TxFifoReadPtr, TxFifoWritePtr;
 logic [7:0] TxDataBuffer;
 
